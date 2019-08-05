@@ -11,7 +11,7 @@ this.pizzaPrice = 0;
 this.pizzaNumber = 1;
 this.pizzaNumbers = [];
 }
-Order.prototype.pizzaCost = function () {
+Order.prototype.pizzaPrice = function () {
 if (this.pizzaSize === "Small") {
 this.pizzaPrice += 2000;
 } else if (this.pizzaSize === "Medium") {
@@ -71,7 +71,7 @@ $(document).ready(function() {
     $("#pizzaDetails").show();
     $("#totalPizzaCost").text(newPizzaOrder.finalCost());
     $("#pizzaDetail").append("<p>" + pizzaDetails + "</p>");
-    $("#size, #crust, #Topping1, #Topping2, #Topping3,#pizza-number").val("");
+    $("#size, #crust, #Topping1, #Topping2,#pizza-number").val("");
     });
     $("#pizzaDetails").click(function() {
     $("#pizzaDetail").toggle();

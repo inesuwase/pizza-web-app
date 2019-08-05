@@ -1,0 +1,40 @@
+body{
+    color: 0 solid black;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(150, 222, 135);
+    font-weight: bold;
+    }
+    .jumbotron{
+    background-image: url("http://www.mypizzastop.com/sites/1567/images/1567image002.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: white;
+    }
+    .card{
+    background-image: url("https://patch.com/img/cdn20/users/22729282/20180427/110819/styles/raw/public/processed_images/denizo71_italian_food_pizza_shutterstock_132517535-1524841650-5657.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    box-shadow: 5px 10px 5px;
+    }
+    #pizzaDetails{
+    display: none;
+    }
+    #pizzaDetail{
+    display: none;
+    }
+    #deliver{
+    display: none;
+    }
+    #pickup{
+    display: none;
+    }
+    #checkout{
+    display: none;
+    }
+    #Cost{
+    text-align: center;
+    margin-top: 5%;
+    }
+    

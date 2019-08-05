@@ -38,4 +38,19 @@ for(var j = 1; j < this.pizzaNumbers.length; j++){
     
     return this.pizzaPrice;
     }
+    Order.prototype.finalCost = function () {
+        var TotalPrice = 0;
+        for (var i = 0; i < PizzatotalPrice.length; i ++) {
+        TotalPrice += PizzatotalPrice[i];
+        }
+        return TotalPrice;
+        }
+        
+        // Order.prototype.numberOfPizza = function () {
+        // for(var j = 1; j < pizzaNumbers.length; j++){
+        // var pizzaNumber = finalCost() * pizzaNumber[j];
+        // }
+        // return pizzaNumber;
+        // }
+        
     

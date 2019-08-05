@@ -9,10 +9,7 @@ pizza-web-app is a web application that displays a landing page for a fictional 
 2.The client using this website also will be able to select his/her pizza crust he/she needs.
 3.The client also will select a pizza topping of his/her need.
 ## Technologies
-1.HTML Javascript 
-2.CSS 
-3.jQuery  
-4.bootstrap
+1.HTML Javascript CSS jQuery  bootstrap
 ## CONTACT Details
 phone number: +250781104953
 E-mail: uwaseines7@gmail.com

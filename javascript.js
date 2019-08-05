@@ -52,5 +52,55 @@ for(var j = 1; j < this.pizzaNumbers.length; j++){
         // }
         // return pizzaNumber;
         // }
-        
+        //User Interface Logic
+$(document).ready(function() {
+    $("form#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    var pizzaSize = $("select#size").val();
+    var crust = $("select#crust").val();
+    var Topping1 = $("select#Topping1").val();
+    var Topping2 = $("select#Topping2").val();
+    var Topping3 = $("select#Topping3").val();
+    var pizzaNumbers = $("input#pizza-number").val();
+    
+    var pizzaDetails = (pizzaNumbers + " " + pizzaSize + ": " + crust + ", " + Topping1 + ", " + Topping2 + ", " + Topping3);
+    var newPizzaOrder = new Order(pizzaSize, crust);
+    newPizzaOrder.pizzaCost();
+    PizzatotalPrice.push(newPizzaOrder.pizzaPrice);
+    
+    $("#pizzaDetails").show();
+    $("#totalPizzaCost").text(newPizzaOrder.finalCost());
+    $("#pizzaDetail").append("<p>" + pizzaDetails + "</p>");
+    $("#size, #crust, #Topping1, #Topping2, #Topping3,#pizza-number").val("");
+    });
+    $("#pizzaDetails").click(function() {
+    $("#pizzaDetail").toggle();
+    $("#deliver").toggle();
+    $("#pickup").toggle();
+    $("#checkout").hide();
+    });
+    
+    $("button#deliver").click(function(event){
+    event.preventDefault();
+    alert("Delivery cost is" + " " + del);
+    var location = prompt("Enter your address:");
+    alert("We will deliver your order at" + " " + location);
+    $("#checkout").show();
+    })
+    $("button#pickup").click(function(event){
+    event.preventDefault();
+    alert("Thank you for shopping with us!!!!!");
+    $("#checkout").show();
+    })
+    $("button#checkout").click(function(event){
+    event.preventDefault();
+    var check = TotalPrice + del;
+    $("#check").text(check);
+    // console.log(check);
+    
+    })
+    
+    
+    
+    })
     

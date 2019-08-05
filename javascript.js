@@ -26,3 +26,16 @@ this.pizzaPrice += 1500;
 } else if (this.crust === "glutenFree") {
 this.pizzaPrice += 2000;
 }
+
+for(var j = 1; j < this.pizzaNumbers.length; j++){
+    pizzaNumber += pizzaNumbers[j];
+    }
+    this.pizzaPrice += this.Topping1;
+    this.pizzaPrice += this.Topping2;
+    this.pizzaPrice += this.Topping3;
+    this.pizzaPrice *= this.pizzaNumber;
+    // this.pizzaPrice *= this.pizzaNumbers;
+    
+    return this.pizzaPrice;
+    }
+    

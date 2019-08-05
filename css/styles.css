@@ -5,9 +5,10 @@ body{
     font-weight: bold;
     }
     .jumbotron{
-    background-image: url("https://patch.com/img/cdn20/users/22729282/20180427/110819/styles/raw/public/processed_images/denizo71_italian_food_pizza_shutterstock_132517535-1524841650-5657.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("https://patch.com/img/cdn20/users/22729282/20180427/110819/styles/raw/public/processed_images/denizo71_italian_food_pizza_shutterstock_132517535-1524841650-5657.jpg");
+    background-repeat: no-repeat; */
     background-size: cover;
+    background-color: gainsboro;
     padding: 100px;
     color: black;
     }
